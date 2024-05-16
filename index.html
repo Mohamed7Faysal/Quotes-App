@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes App</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+    <!-- ================   Google Fonts  ================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================   bootstrap css  ================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ================   main-file-css  ================-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--================   Start   ================-->
+    <div
+      class="container d-flex text-center justify-content-center position-relative"
+    >
+      <div>
+        <h1 class="parent">Quote of the Day</h1>
+        <h2>Press the button below to recieve a random quote!</h2>
+        <button class="btnn" type="button" onclick="generate()">
+          <span>Generate Quot</span><i></i>
+        </button>
+        <div class="quotes">
+          <h3 id="quote" class="quote">Quote</h3>
+          <p id="author" class="author">Author</p>
+        </div>
+        <div class=" container h-container position-relative">
+          <div class="typedd position-absolute text-center">
+            <h4>Created By</h4>
+            <span id="typed5"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================   End   ================-->
+
+    <!--================   typed-library    ================-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="js/typed.js"></script>
+    <!-- ================   bootstrap js  ================-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ================   main-file-js  ================-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
